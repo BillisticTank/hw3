@@ -1,0 +1,94 @@
+<!--Author: Alexander Leah-->
+<html>
+	<!--Title of the page with the link to the css file-->
+	<head>
+		<title>Hw1 - Cheescake Order Form</title>
+		<link rel="stylesheet" href="stylesheets/leah28.css">
+		<script
+ 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+		</script>
+		
+	</head>
+
+	<body>
+		<!--Title and cheescake photo-->
+		<h1 style="font-size: 40px;">Cheescake Order Form</h1>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/1280px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" width="250" height="250">
+		<!--Quantitiy of toppings section with the radio buttons and dropdown-->
+		<h2>
+		<p>Quantity Topping</p>
+		<table>
+			<tr>
+				<td>
+					<!--dropdown with 4 options-->
+					<select id="amount" name="amount">
+						<option value="0">Zero</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				</td>
+				<td>
+					<!--Radio buttons with exclusivity of choice-->
+					<input type="radio" id="topping_p" name="topping" value="plain">
+					<label for="topping_p">Plain</label><br>
+					<input type="radio" id="topping_c" name="topping" value="cherry">
+					<label for="topping_c">Cherry</label><br>
+					<input type="radio" id="topping_ch" name="topping" value="chocolate">
+					<label for="topping_ch">Chocolate</label><br>
+				</td>
+			</tr>
+		</table>
+		<div>
+			<!--special instructions text form with hint on what should be in the box-->
+			<label for="notes">Notes:</label><br>
+			<textarea id="notes" name="notes" rows="5" cols="50" placeholder="Enter any special instructions here."></textarea>
+			
+		</div>
+		<!--total orders last month section using a list tag for bullet points-->
+		<button id="order">Order</button>
+		
+		</h2>
+		<p hidden id="confirmMessage">Thank you! Your order has been placed</p>
+		<script src="javascripts/orderButton.js"></script>
+		<!-- I used a dropdown example code from w3schools as starter code then modified it to fit in with the cheescake order form. 
+		Here's the link: https://www.w3schools.com/howto/howto_css_dropdown.asp 
+		on a side note w3schools has really good tutorials-->
+		<table>
+			<tr>
+				<td>
+					<p style="font-size: 25px; font-family: Verdana, h;">Total Orders Last</p>
+				</td>
+				<td>
+					<!-- dropdown seperated into div tags. all the differetn months are located here-->
+					<div class="dropdown">
+						<button id="dropdownMonth-button" class="dropbtn">Jan</button>
+						<div id="dropdownMonth-content" class="dropdown-content">
+							<a href="#" class="month">Feb</a>
+							<a href="#" class="month">Mar</a>
+							<a href="#" class="month">Apr</a>
+							<a href="#" class="month">May</a>
+							<a href="#" class="month">June</a>
+							<a href="#" class="month">Jul</a>
+							<a href="#" class="month">Aug</a>
+							<a href="#" class="month">Sep</a>
+							<a href="#" class="month">Oct</a>
+							<a href="#" class="month">Nov</a>
+							<a href="#" class="month">Dec</a>
+						</div>
+						<script src="javascripts/monthDropdownText.js"></script>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</body>
+		<ul>
+			<li>11 Cherry</li>
+			<li>17 Chocolate</li>
+			<li>11 Plain</li>
+		</ul>
+		
+	</body>
+
+
+</html>

@@ -1,0 +1,72 @@
+/*Author: Alexander Leah*/
+body {
+    /*centering the body of the form as well as adding a nice backround of 4 colours that remind of the beach :)*/
+    background: linear-gradient(#e3c7b1, #e3b1b1, #8df0d2, #f0ee8d);
+    height: 400px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+p{
+    /*font for every text with the paragraph tag*/
+    font-family: 'Verdana';
+    font-weight: bold;
+}
+h1{
+    /*font and underline for the title of the page*/
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    
+    text-decoration: underline;
+}
+
+/*I used a dropdown example code from w3schools as starter code then modified it to fit in with the cheescake order form. 
+Heres the link: https://www.w3schools.com/howto/howto_css_dropdown.asp I specifically changed the font of the main buttons text and its colour
+to better fit my forms style*/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  font-family: Verdana, h;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: Verdana, h;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
